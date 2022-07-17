@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Code for FUKUI ハッカソン - 発表動画</title>
+</head>
+<bdoy>
+
+<style>
+img {
+  width: 30vw;
+}
+td {
+  word-break: break-all;
+}
+video {
+  width: 100%;
+}
+</style>
+
+<h1 id=title></h1>
+
+<div id=movies></diV>
+
+<hr>
+<a href=https://github.com/code4fukui/hackathon/> src on GitHub</a>
+
+<script type="module">
+import { CSV } from "https://js.sabae.cc/CSV.js";
+
+title.textContent = document.title;
+
+//const url = "https://code4fukui.github.io/hackathon/20220716.csv";
+const url = "./20220716.csv";
+const data = CSV.toJSON(await CSV.fetch(url));
+console.log(data)
+const cr = (tag) => document.createElement(tag);
+for (const d of data) {
+  const div = cr("div");
+  const name = cr("h2");
+  name.textContent = d.teamname + ". " + d.title;
+  div.appendChild(name);
+  const video = cr("video");
+  video.src = d.movie;
+  video.controls = true;
+  div.appendChild(video);
+  movies.appendChild(div);
+}
+
+</script>
+
+</body>
+<html>
+  

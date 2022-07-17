@@ -8,4 +8,6 @@ Code for FUKUI ハッカソンオープンデータ
 
 ## サンプルアプリ
 
-https://code4fukui.github.io/hackathon/
+- [CSVデータ表示](https://code4fukui.github.io/hackathon/)
+- [動画一覧](https://code4fukui.github.io/hackathon/movie.html)
+
