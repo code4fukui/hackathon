@@ -13,6 +13,9 @@ td {
 video {
   width: 100%;
 }
+#movies a {
+  margin-right: .8em;
+}
 </style>
 
 <h1 id=title></h1>
@@ -41,6 +44,16 @@ for (const d of data) {
   video.src = d.movie;
   video.controls = true;
   div.appendChild(video);
+  const opt = cr("div");
+  const a1 = cr("a");
+  a1.textContent = "スライドを見る";
+  a1.href = d.slide;
+  opt.appendChild(a1);
+  const a2 = cr("a");
+  a2.textContent = "GitHubでのオープンソースを見る";
+  a2.href = d.github;
+  opt.appendChild(a2);
+  div.appendChild(opt);
   movies.appendChild(div);
 }
 
