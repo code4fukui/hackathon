@@ -1,13 +1,16 @@
 # hackathon
 
-Code for FUKUI ハッカソンオープンデータ
+Code for FUKUI Open Data Hackathon
 
-## オープンデータ
+## Open Data
 
-- [2022-07-16 稼ぐ福井の観光アイデアソン＆ハッカソン](https://code4fukui.github.io/hackathon/20220716.csv)
+- [2022-07-16 FUKUI Tourism Ideathon & Hackathon](https://code4fukui.github.io/hackathon/20220716.csv)
 
-## サンプルアプリ
+## Sample Apps
 
-- [CSVデータ表示](https://code4fukui.github.io/hackathon/)
-- [動画一覧](https://code4fukui.github.io/hackathon/movie.html)
+- [CSV Data Viewer](https://code4fukui.github.io/hackathon/)
+- [Presentation Videos](https://code4fukui.github.io/hackathon/movie.html)
 
+## License
+
+MIT License
