@@ -1,5 +1,7 @@
 # hackathon
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 Code for FUKUI Open Data Hackathon
 
 ## Open Data
